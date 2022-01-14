@@ -1,0 +1,23 @@
+{
+  "name": "sustitute-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sustitute-map.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jozevii/sustitute-map.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jozevii/sustitute-map/issues"
+  },
+  "homepage": "https://github.com/jozevii/sustitute-map#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}

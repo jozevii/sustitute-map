@@ -1,0 +1,35 @@
+JavaScript Technical challenge
+==============================
+
+Objective
+---------
+Write a short program that resolves variable values in an input Map. 
+
+Problem description
+-------------------
+An input of the program will consist of a map where keys are simple strings and where values are strings that can contain variables referencing other keys in the map through the ${KEY} pattern - e.g. 
+
+"key1": "foo${key2}bar"
+
+When encountered, such value should be resolved by substituting ${KEYNAME} with the value from the map under the key "KEYNAME". 
+
+Example: 
+
+if the input map is:
+
+"key1": "value1" 
+"key2": "${key1}value2"
+
+the expected output would be: 
+
+"key1": "value1" 
+"key2": "value1value2"
+
+The program must clearly report any errors in the input by throwing an exception with a descriptive message, i.e., invalid input Maps must be clearly identified by the program and error messages should provide hints on to on how to fix the issue.
+
+Expected deliverables
+---------------------
+- A project with the program and a corresponding unit tests.
+- A list of 3rd party libraries used (if any) with a very short justification for using them (note: those libraries should be helpers only and should not solve the whole problem).
+- A short list of things that were not clear from the problem description (if any) and how you decided to deal with the unspecified things (make assumptions and document them).
+
