@@ -1,0 +1,27 @@
+<script>
+    var array =  {
+        "key1":"value1",
+        "key2":"${key1}value2"
+    };
+
+    for (nameProperty in array) {
+        if (array[nameProperty].includes("${") && array[nameProperty].includes("}")) {
+            array[nameProperty] = replacePattern(array[nameProperty]);
+        }
+    }
+
+    function replacePattern(string) {
+        let newString = string;
+        let firstSplit = string.split("${");
+        for (let i = 0; i < firstSplit.length; i++) {
+            if (firstSplit[i].includes("}")) {
+                let secondSplit = firstSplit[i].split("}");
+                let replaceString = secondSplit[0];
+                if(typeof array[replaceString] !== 'undefined') newString = newString.replace("${"+replaceString+"}",array[replaceString]);     
+            }
+        }
+        return newString;
+    }
+
+    console.log(array);
+</script>
