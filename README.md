@@ -7,7 +7,7 @@ List of the 3rd party libraries used:
 ### 
 Things not clear and decision:<br/>
 - In the email appear that is a JavaScript, HTML, CSS and in the description appear that is a JavaScript exercice. I decided to show only functionality and testing. If you want some design with HTML and CSS you can tell me. <br/>
-- What if exist are bidirectional reference? I decided to get the values in order. <br/>
+- What if exist are bidirectional reference? I decided to catch the error and return a string. <br/>
 - What if exist an auto reference or a reference to a non existent or empty property? I have decided to omit the auto reference. <br/>
 ####
 If you have any question or something to say to me you can contact me josevrb98@gmail.com <br/>
